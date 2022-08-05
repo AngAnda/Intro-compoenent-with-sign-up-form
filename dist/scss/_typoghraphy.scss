@@ -64,6 +64,11 @@ a{
 }
 
 label{
-    display: none;
+    visibility: hidden;
     position: absolute;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: map-get($font-weights, "light" );
 }
