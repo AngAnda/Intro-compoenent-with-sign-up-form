@@ -62,3 +62,8 @@ a{
     font-weight: map-get($font-weights, "regular");
     margin-top: 5px;
 }
+
+label{
+    display: none;
+    position: absolute;
+}

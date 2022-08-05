@@ -53,6 +53,11 @@ a {
   margin-top: 5px;
 }
 
+label {
+  display: none;
+  position: absolute;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -160,7 +165,6 @@ input:not(#i1), .terms_and_services p {
   body {
     height: unset;
     text-align: center;
-    background-image: url('../images/bg-intro-mobile.png') no-repeat;
   }
   h1 {
     font-size: 2rem;
