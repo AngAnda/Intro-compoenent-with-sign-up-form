@@ -1,0 +1,64 @@
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$font-weights :(
+    "light":400,
+    "regular":500,
+    "medium": 600,
+    "bold":700
+);
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+input{
+    font-family: inherit;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem ;
+}
+
+.left{
+    color:white;
+    & p{
+        font-size: 1.2rem;
+    }
+}
+
+#trial{
+    color:white;
+}
+
+input[type="submit"]{
+    text-transform: uppercase;
+}
+
+.terms_and_services{
+    color: $Grayish-Blue;
+    & a{
+        text-decoration: none;
+        color:$Red;
+    }
+}
+
+input:not(input[type="submit"]){
+    font-weight: map-get($font-weights , "medium" );
+}
+
+a{
+    font-weight: map-get($font-weights , "bold" );
+}
+
+.warning p{
+    font-size: 0.75rem;
+    text-align: right;
+    font-style: italic;
+    color:$Red;
+    font-weight: map-get($font-weights, "regular");
+    margin-top: 5px;
+}

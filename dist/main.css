@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+input {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.left {
+  color: white;
+}
+.left p {
+  font-size: 1.2rem;
+}
+
+#trial {
+  color: white;
+}
+
+input[type=submit] {
+  text-transform: uppercase;
+}
+
+.terms_and_services {
+  color: hsl(246deg, 25%, 77%);
+}
+.terms_and_services a {
+  text-decoration: none;
+  color: hsl(0deg, 100%, 74%);
+}
+
+input:not(input[type=submit]) {
+  font-weight: 600;
+}
+
+a {
+  font-weight: 700;
+}
+
+.warning p {
+  font-size: 0.75rem;
+  text-align: right;
+  font-style: italic;
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/bg-intro-desktop.png");
+  background-color: hsl(0deg, 100%, 74%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  margin: 0 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+#form {
+  background-color: white;
+}
+#form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.left {
+  /* de modificat inaltimea */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  text-align: center;
+}
+
+.box {
+  border-radius: 10px;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.201);
+}
+
+#trial {
+  padding: 15px 0;
+  background-color: hsl(248deg, 32%, 49%);
+  margin-bottom: 30px;
+}
+
+#form {
+  padding: 30px;
+}
+
+input {
+  padding: 15px 20px;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 5px;
+  color: hsl(249deg, 10%, 26%);
+}
+input[type=submit] {
+  background-color: hsl(154deg, 59%, 51%);
+  color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 2px hsl(154deg, 97%, 28%);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+input:not(#submit):focus {
+  border: 1px solid black;
+}
+
+input:not(#i1), .terms_and_services p {
+  margin-top: 20px;
+}
+
+#submit:hover {
+  background-color: hsla(154deg, 59%, 51%, 0.696);
+}
+
+.warning {
+  position: relative;
+  display: none;
+}
+
+.icon {
+  background: url("../images/icon-error.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 25px;
+  top: -38px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: unset;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .left p, .right p, .terms_and_services p {
+    font-size: 0.9rem;
+  }
+  .terms_and_services p {
+    font-size: 0.7rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}/*# sourceMappingURL=main.css.map */

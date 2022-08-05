@@ -1,0 +1,131 @@
+@import './variables';
+@import './typoghraphy';
+@import './resets';
+
+body{
+    background: url('../images/bg-intro-desktop.png');
+    background-color: $Red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main{
+    display: flex; 
+    margin: 0 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:3rem;
+}
+
+
+#form{
+    background-color: white;
+
+    & form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+.left{
+    /* de modificat inaltimea */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right{
+    text-align: center;
+}
+
+.box{
+    border-radius: 10px;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.201) ;
+}
+
+#trial{
+    padding: 15px 0;
+    background-color: $Blue;
+    margin-bottom:30px;
+}
+
+#form{
+    padding: 30px;
+}
+
+input{
+    padding: 15px 20px;
+    border: 1px solid $Grayish-Blue;
+    border-radius: 5px;
+    color:$Dark-Blue;
+
+    &[type="submit"]{
+        background-color: $Green;
+        color: white;
+        cursor: pointer;
+        border:none;
+        box-shadow: 0px 2px $Green-Border;
+        font-weight: map-get($font-weights , "medium" );
+        letter-spacing: 1.5px;
+    }
+
+    &:not(#submit):focus{
+        border: 1px solid black;
+    }
+    
+}
+
+input:not(#i1), .terms_and_services p{
+    margin-top: 20px;
+}
+
+#submit:hover{
+    background-color: $Green-Light;
+}
+
+.warning{
+    position: relative;
+    display: none;
+}
+
+.icon{
+    background: url('../images/icon-error.svg') no-repeat;
+    width:25px;
+    height:25px;
+    position: absolute;
+    right: 25px;
+    top:-38px;
+}
+
+@media screen and(max-width:768px) {
+
+    body{
+        height: unset;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .left p, .right p, .terms_and_services p{
+        font-size: 0.9rem;
+    }
+
+    .terms_and_services p{
+            font-size: 0.7rem;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+    
+}
