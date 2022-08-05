@@ -65,7 +65,7 @@ input{
     border-radius: 5px;
     color:$Dark-Blue;
 
-    &[type="submit"]{
+    &[type="button"]{
         background-color: $Green;
         color: white;
         cursor: pointer;
@@ -73,6 +73,7 @@ input{
         box-shadow: 0px 2px $Green-Border;
         font-weight: map-get($font-weights , "medium" );
         letter-spacing: 1.5px;
+
     }
 
     &:not(#submit):focus{

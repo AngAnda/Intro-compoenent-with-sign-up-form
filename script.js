@@ -1,21 +1,22 @@
 
-// TO DO
-
 function valid(){
-    alert("valid");
-    var v1 = document.getElementById("i1");
-    var v = document.getElementsByClassName("input-data").value;
-
+    let inputs = document.getElementsByClassName("input-data");
+    for(i=0; i<inputs.length; i++){
+        if(inputs[i].innerHTML == ""){
+            return false;
+        }
+    }
+    return true
 }
 
 function checkForm(){
-   // valid();
-    var submit = document.getElementById("submit");  
-}
-
-
-function invalid(){
-    var inputs= document.getElementsByClassName("warning");
-    for( i=0; i<inputs.length; i++)
-        inputs[i].style.display="block";
+    if(!valid()){
+        let a = document.getElementsByClassName("warning");
+        let inputs = document.getElementsByClassName("input-data");
+        for( i=0; i<a.length; i++){
+            a[i].style.display = "block";
+            inputs[i].style.border="1px solid hsl(0, 100%, 74%)";
+        }
+        return false;
+    }    
 }

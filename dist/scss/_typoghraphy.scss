@@ -34,7 +34,7 @@ h1{
     color:white;
 }
 
-input[type="submit"]{
+input[type="button"]{
     text-transform: uppercase;
 }
 
@@ -46,7 +46,7 @@ input[type="submit"]{
     }
 }
 
-input:not(input[type="submit"]){
+input:not(input[type="button"]){
     font-weight: map-get($font-weights , "medium" );
 }
 

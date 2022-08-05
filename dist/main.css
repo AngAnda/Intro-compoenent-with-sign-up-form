@@ -24,7 +24,7 @@ h1 {
   color: white;
 }
 
-input[type=submit] {
+input[type=button] {
   text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@ input[type=submit] {
   color: hsl(0deg, 100%, 74%);
 }
 
-input:not(input[type=submit]) {
+input:not(input[type=button]) {
   font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ input {
   border-radius: 5px;
   color: hsl(249deg, 10%, 26%);
 }
-input[type=submit] {
+input[type=button] {
   background-color: hsl(154deg, 59%, 51%);
   color: white;
   cursor: pointer;
